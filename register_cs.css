@@ -17,47 +17,15 @@ body{
 
 
 }
-.loginpage{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding-bottom: 40px;
-}
-.loginpage > a{
-    text-decoration: none;
-    color:white;
-}
-.loginpage > p{
-    margin:5px;
-}
-.icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.icons > i{
-    margin:20px;
-}
-.registerheading{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top:1%;
-    color:white;
-    
-}
 .container{
-    width:375px;
+    width:30%;
     backdrop-filter:blur(20px);
     height:600px;
     border:2px solid white;
     border-radius: 5px;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    overflow-y:auto;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .container::-webkit-scrollbar{
     display: none;
@@ -88,7 +56,35 @@ input{
     justify-content: center;
     align-items: center;
     width:100%;
-    transform: translateY(-50px);
+    padding-bottom: 50px;
+}
+.namealign{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: transparent;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height:auto;
+    margin:20px;
+}
+.namealign > div{
+    background-color: transparent;
+    margin: 20px;
+    width:90%;
+}
+.namealign > div > input{
+    width:90%;
+    height:25px;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 .alignep{
     display: flex;
@@ -116,10 +112,6 @@ input{
     border-bottom: 2px solid white;
     outline: none;
     background-color: transparent;
-}
-.alignep >  div > i{
-    transform: translateX(-25px);
-
 }
 .headertext{
     font-family: Arial, Helvetica, sans-serif;
